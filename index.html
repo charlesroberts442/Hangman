@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Charles' Hangman Game</title>
+   <!-- Bootstrap File -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <!-- JQuery -->
+   <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+   <!-- Overall Bootstrap Grid -->
+   <div class="container">
+      <!-- Jumbotron with Title -->
+      <div class="jumbotron">
+         <h1 class="text-center"><strong>Hangman</strong></h1>
+         <hr>
+         <h4 class="text-center">The Musical Artist Edition</h4>
+      </div>
+      <div class="row">
+         <!-- Left Panel - The canvas where we draw the gallows-->
+         <div class="col-lg-6">
+            <canvas id="hangman_canvas" width="550" height="600">Your browser does not support the html5 canvas tag.</canvas>
+         </div>
+
+
+         <!-- Left Panel -->
+         <div class="col-lg-6">
+
+            <!-- The artist-->
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h3 class="panel-title">The Artist:</h3>
+               </div>
+               <div class="panel-body">
+                  <div class="text-center">
+                     <div id="guess"></div>
+                     <div id=hmButtons></div>
+                  </div>
+               </div>
+               <!-- End of <div class="panel-body"> -->
+            </div>
+            <!-- End of <div class="panel panel-default"> -->
+
+            <!-- The hint -->
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h3 class="panel-title">Artist Information:</h3>
+               </div>
+               <div class="panel-body">
+                  <div class="text-center">
+                     <div id="hint"></div>
+                  </div>
+               </div>
+               <!-- End of <div class="panel-body"> -->
+
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Linking Javascript -->
+   <script type="text/javascript" src="assets/javascript/Guess.js"></script>
+   <script type="text/javascript" src="assets/javascript/hmButton.js"></script>
+   <script type="text/javascript" src="assets/javascript/ArtistCollection.js"></script>
+   <script type="text/javascript" src="assets/javascript/hmGraphic.js"></script>
+   <script type="text/javascript" src="assets/javascript/logic.js"></script>
+</body>
+
+</html>
