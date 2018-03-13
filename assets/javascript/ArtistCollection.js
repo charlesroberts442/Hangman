@@ -22,6 +22,7 @@
  */
    constructor(name_in, description_in)
    {
+      "use strict";
       /** 
        * @member {String} 
        */

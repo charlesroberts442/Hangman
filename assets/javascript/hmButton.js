@@ -33,9 +33,9 @@ class ButtonCollection {
             var butt = document.createElement("button");
             butt.text = _abc[i];
             butt.innerHTML = _abc[i];
-            butt.style.padding = "0px";
+            butt.style.padding = 0;
             butt.style.fontWeight = "bold";
-            butt.style.margin = "2px";
+            butt.style.margin = "0.02em";
             butt.addEventListener("click", ButtonCollection.processLetter);
             buttonDiv.appendChild(butt);
          }
